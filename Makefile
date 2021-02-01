@@ -294,7 +294,7 @@ else ifeq ($(platform), goadvance)
 	SINGLE_PREC_FLAGS = 1
 	HAVE_LTCG = 0
 	HAVE_OPENMP = 0
-	CFLAGS += 
+	CFLAGS += -march=armv7-a+simd
 	CFLAGS += 
 	CXXFLAGS += $(CFLAGS)
 	ASFLAGS += $(CFLAGS) 
