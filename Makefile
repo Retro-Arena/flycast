@@ -294,8 +294,8 @@ else ifeq ($(platform), goadvance)
 	SINGLE_PREC_FLAGS = 1
 	HAVE_LTCG = 0
 	HAVE_OPENMP = 0
-	CFLAGS += -march=armv7 -mtune=cortex-a35 -mcpu=cortex-a35 
-	CFLAGS += -DHOST_CPU=0x20000006 -DTARGET_LINUX_ARMv7
+	CFLAGS += -march=armv7-a -mtune=cortex-a35 -mcpu=cortex-a35 
+	CFLAGS += -DHOST_CPU=0x20000006 -DTARGET_LINUX_ARMv7a
 	CXXFLAGS += $(CFLAGS)
 	ASFLAGS += $(CFLAGS) -c
 	PLATFORM_EXT := unix
