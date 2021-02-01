@@ -294,12 +294,12 @@ else ifeq ($(platform), goadvance)
 	SINGLE_PREC_FLAGS = 1
 	HAVE_LTCG = 0
 	HAVE_OPENMP = 0
-	CFLAGS += -mtune=cortex-a35 -mcpu=cortex-a35 
+	CFLAGS += -marm -mcpu=cortex-a35
 	CFLAGS += 
 	CXXFLAGS += $(CFLAGS)
-	ASFLAGS += $(CFLAGS) -c
+	ASFLAGS += $(CFLAGS) 
 	PLATFORM_EXT := unix
-	WITH_DYNAREC =
+	WITH_DYNAREC = arm
 	HAVE_GENERIC_JIT = 0
 	CORE_DEFINES += -DLOW_END -DLOW_RES
 
