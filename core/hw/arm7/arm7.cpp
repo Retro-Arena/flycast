@@ -1,6 +1,6 @@
 #include "arm7.h"
 #include "arm_mem.h"
-#include "cstring"
+#include <cstring>
 
 #define arm_printf(...) DEBUG_LOG(AICA_ARM, __VA_ARGS__)
 
