@@ -299,7 +299,7 @@ else ifeq ($(platform), goadvance)
 	CXXFLAGS += $(CFLAGS)
 	ASFLAGS += $(CFLAGS) -c
 	PLATFORM_EXT := unix
-	WITH_DYNAREC = arm
+	WITH_DYNAREC =
 	HAVE_GENERIC_JIT = 0
 	CORE_DEFINES += -DLOW_END -DLOW_RES
 
